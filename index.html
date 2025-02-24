@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Participante</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="img/Ilustration.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <section class="box-form">
+
+        <div class="icon-voltar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 256 256"><path fill="currentColor" d="M220 128a4 4 0 0 1-4 4H49.66l65.17 65.17a4 4 0 0 1-5.66 5.66l-72-72a4 4 0 0 1 0-5.66l72-72a4 4 0 0 1 5.66 5.66L49.66 124H216a4 4 0 0 1 4 4"/></svg>
+            <h2>Voltar</h2>
+        </div>
+
+        <div class="text-title">
+            <h1>Formulário de Inscrição</h1>
+            <p>Preencha os dados abaixo para fazer sua inscrição no Programa Trilhas.</p>
+        </div>
+
+        <form>
+            <h2>Informações do Participante</h2>
+
+            <div class="form-grupo">
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome" placeholder="Nadson Cutrim" required>
+            </div>
+    
+            <div class="form-grupo">
+                <label for="data_nascimento">Data de nascimento:</label>
+                <input type="date" id="data_nascimento" name="data_nascimento" value="" required>
+            </div>
+    
+            <div class="form-grupo">
+                <label for="cpf">CPF:</label>
+                <input type="number" id="cpf" name="cpf" placeholder="xxx.xxx.xxx-xx" required>
+            </div>
+    
+            <div class="form-grupo">
+                <label for="sexo">Sexo:</label>
+                <select id="sexo" name="sexo" required>
+                    <option disabled selected>Selecione</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
+    
+            <div class="form-grupo">
+                <label for="email">E-mail:</label> 
+                <input type="email" id="email" name="email" value="" placeholder="name@gmail.com" required>
+                <div class="icons">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 50 50"><path fill="#DC2626" d="M25 42c-9.4 0-17-7.6-17-17S15.6 8 25 8s17 7.6 17 17s-7.6 17-17 17m0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15s15-6.7 15-15s-6.7-15-15-15"/><path fill="#DC2626" d="M24 32h2v2h-2zm1.6-2h-1.2l-.4-8v-6h2v6z"/></svg>
+                    <small>Insira um e-mail válido</small>
+                </div>
+            </div>
+    
+            <div class="form-grupo">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" value="" placeholder="(xx) x xxxx-xxxx">
+            </div>
+    
+            <div class="form-grupo">
+                <label for="documento">Documento de identidade:</label>
+                <div class="upload-box">
+                    <img src="img/cloud-upload.png" alt="Upload">
+                    <p>Clique aqui para selecionar o arquivo</p>
+                </div>
+            </div>
+     
+             <div class="form-grupo">
+                <h2>Endereço Residencial</h2>
+
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" name="cep" value="" placeholder="xx xxx-xxx" required>
+             </div>
+
+             <div class="form-grupo inline">
+                <div class="box-1">        
+                    <label for="rua">Rua:</label>
+                    <input type="text" id="rua" name="rua" value="" placeholder="RUA 01" disabled>
+
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade" placeholder="São Luís" disabled>
+                </div>
+
+                <div class="box-2">
+                    <label for="numero">Número:</label>
+                    <input type="number" id="numero" name="numero" value="10">
+
+                    <label for="text">Estado:</label>
+                    <input type="text" id="name" value="" placeholder="MA" disabled>
+                </div>
+            </div>
+    
+            <div class="form-grupo">
+                <label for="comprovante">Comprovante de residência:</label>
+                <div class="upload-box">
+                    <img src="img/cloud-upload.png" alt="Upload">
+                    <p>Clique aqui para selecionar o arquivo</p>
+                </div>
+            </div>
+    
+            <div class="form-grupo">
+                <h2>Trilhas de aprendizagem</h2>
+            
+                <div class="form-trilhas">            
+                    <label class="box">
+                        <img src="img/icon-front.png" alt="Front-end">
+                        <h3>Programação Front-end</h3>
+                        <input type="radio" id="front" name="curso" value="front">
+                    </label>
+
+                    <label class="box"> 
+                        <img src="img/icon-back.png" alt="Back-end">
+                        <h3>Programação Back-end</h3>
+                        
+                        <input type="radio" id="back" name="curso" value="back">
+                    </label>
+
+                    <label class="box"> 
+                        <img src="img/icon-dados.png" alt="dados">
+                        <h3>Ciência de Dados</h3>  
+                        <input type="radio" id="full" name="curso" value="dados">
+                    </label>
+
+                    <label class="box"> 
+                        <img src="img/jogos.png" alt="jogos">
+                        <h3>Programação de Jogos</h3>
+                        <input type="radio" id="jogos" name="curso" value="jogos">
+                    </label>
+
+                    <label class="box">
+                        <img src="img/icon-ux.png" alt="UX  Design">
+                        <h3>Design e Experiência</h3>
+                        <input type="radio" id="Ux" name="curso" value="Ux">
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-condicoes">
+                <input type="checkbox"name="termos">
+                <label>
+                    Declaro que li e concordo com os <span>Termos e Condições</span> e com a <span>Politica de Privacidade.</span>
+                </label>
+            </div>
+
+            <div class="buttons">
+                <button type="button">Cancelar</button>
+                <button type="button">Fazer Inscrição</button>
+            </div>
+            
+            </div>
+        </form>
+
+    </section>
+
+    <section class="box-img">
+        <img src="img/Ilustration.png" alt="Ilustration">
+        <img src="img/logo-trilhas-inova.png" alt="Ilustration">
+    </section>
+
+    <script src="https://kit.fontawesome.com/091f30ca3a.js" crossorigin="anonymous"></script>
+  </body>
+</html>
